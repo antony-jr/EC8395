@@ -11,7 +11,9 @@ time_period = 0:01:10;
 
 amplitude = 7 % How high the wave should go in the y axis , vertical scalling ?
 
-wave = amplitude * cos(2*pi*frequency*time_period)
+omega = 2*pi*frequency % Why ?
+
+wave = amplitude * cos(omega*time_period)
 
 waitfor(plot(time_period , wave)) % Time domain graph
 
